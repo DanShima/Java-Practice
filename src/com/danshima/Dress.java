@@ -3,9 +3,21 @@ package com.danshima;
 public class Dress {
     private String color;
     private int price;
-    public Dress(String color, int price){
+    private String brand;
+
+    public Dress(String name, String color, int price){
+        this.brand = name;
         this.color = color;
         this.price = price;
+    }
+
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public int getPrice(){
@@ -22,6 +34,6 @@ public class Dress {
     }
 
     public String toString(){
-        return "Dress " + "color = " + color + ", " + "price = " + price + ". ";
+        return "Dress " + brand + ": " + "color = " + color + ", " + "price = " + price + ". ";
     }
 }
