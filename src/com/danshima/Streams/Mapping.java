@@ -2,8 +2,6 @@ package com.danshima.Streams;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
-
 import static java.util.stream.Collectors.toList;
 
 public class Mapping {
@@ -26,8 +24,13 @@ public class Mapping {
         // flatMap
         List<Integer> numbers1 = Arrays.asList(1,2,3,4,5);
         //return a list of the square of each number
+        List<Integer> numberInSquares =
+                numbers1.stream()
+                .map(n -> n*n)
+                .collect(toList());
+        System.out.println(numberInSquares);
 
-
+        //return all pairs of numbers using two list of numbers
         List<Integer> numbers2 = Arrays.asList(6,7,8);
         List<int[]> pairs =
                 numbers1.stream()
@@ -35,7 +38,7 @@ public class Mapping {
                                 .map((Integer j) -> new int[]{i, j})
                         )
                         .filter(pair -> (pair[0] + pair[1]) % 3 == 0)
-                        .collect(toList());
+                        .collect(toList()); //terminal operation so forEach is separated
         pairs.forEach(pair -> System.out.println("(" + pair[0] + ", " + pair[1] + ")"));
     }
     }
