@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class Filtering {
@@ -48,6 +49,21 @@ public class Filtering {
                 .sorted(comparing(Traveller::getName))
                 .collect(toList());
         System.out.println(travellersTokyo);
+
+        //find out if a traveller is from Berlin
+        boolean kievOrigin =
+                trips.stream()
+                .anyMatch(trip -> trip.getTraveller().getCity().equals("Berlin"));
+        System.out.println(kievOrigin);
+
+        //return a string of all travellers' names sorted alphabetically
+        String travellerNames =
+                trips.stream()
+                .map(trip -> trip.getTraveller().getName())
+                .distinct()
+                .sorted()
+                .collect(joining(" ")); //separate the names with a space
+        System.out.println(travellerNames);
 
 
     }

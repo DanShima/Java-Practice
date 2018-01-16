@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7a9c81-0d0a-4d2b-beec-ad45a66a1a73" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/danshima/TripBooking/Filtering.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/danshima/TripBooking/Traveller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/danshima/TripBooking/Trip.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/danshima/Dress.java" afterPath="$PROJECT_DIR$/src/com/danshima/DressMaking/Dress.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/danshima/DressFormat.java" afterPath="$PROJECT_DIR$/src/com/danshima/DressMaking/DressFormat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/danshima/FancyDress.java" afterPath="$PROJECT_DIR$/src/com/danshima/DressMaking/FancyDress.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/danshima/FilterDress.java" afterPath="$PROJECT_DIR$/src/com/danshima/DressMaking/FilterDress.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/danshima/SimpleDress.java" afterPath="$PROJECT_DIR$/src/com/danshima/DressMaking/SimpleDress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java 8 Practice/com/danshima/Streams/Finding.class" afterPath="$PROJECT_DIR$/out/production/Java 8 Practice/com/danshima/Streams/Finding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/danshima/Streams/Finding.java" afterPath="$PROJECT_DIR$/src/com/danshima/Streams/Finding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/danshima/TripBooking/Filtering.java" afterPath="$PROJECT_DIR$/src/com/danshima/TripBooking/Filtering.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +60,8 @@
       <file leaf-file-name="Filtering.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/danshima/TripBooking/Filtering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+            <state relative-caret-position="301">
+              <caret line="64" column="73" lean-forward="false" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -415,7 +405,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -709,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/danshima/TripBooking/Filtering.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        <state relative-caret-position="301">
+          <caret line="64" column="73" lean-forward="false" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
