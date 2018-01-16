@@ -1,4 +1,7 @@
-package com.danshima;
+package com.danshima.DressMaking;
+
+import com.danshima.DressMaking.Dress;
+import com.danshima.DressMaking.DressFormat;
 
 public class FancyDress implements DressFormat {
     public String print(Dress dress){

@@ -1,4 +1,4 @@
-package com.danshima;
+package com.danshima.DressMaking;
 
 public class Dress {
     private String color;

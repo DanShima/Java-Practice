@@ -17,10 +17,17 @@ public class Finding {
 
         //reduce combines each element repeatedly until the stream is reduced to a single value
         int sum = numbers.stream().reduce(0, (a, b) -> a + b);
+        //OR int sum = numbers.stream().reduce(0, Integer::sum);
         System.out.println(sum);
 
         int product = numbers.stream().reduce(1, (a, b) -> a * b);
         System.out.println(product);
+
+        Optional<Integer> max = numbers.stream().reduce(Integer::max);
+        System.out.println("Compute maxima: " + max);
+
+        Optional<Integer> min = numbers.stream().reduce(Integer::min);
+        System.out.println("Compute minima: " + min);
 
     }
 }
