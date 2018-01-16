@@ -2,6 +2,7 @@ package com.danshima.TripBooking;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -64,6 +65,20 @@ public class Filtering {
                 .sorted()
                 .collect(joining(" ")); //separate the names with a space
         System.out.println(travellerNames);
+
+        // What's the most expensive trip?
+        int mostExpensiveTrip =
+                trips.stream()
+                        .map(Trip::getPrice)
+                        .reduce(0, Integer::max);
+        System.out.println(mostExpensiveTrip);
+
+        //now the cheapest
+        Optional<Trip> cheapest =
+                trips.stream()
+                .min(comparing(Trip::getPrice));
+        System.out.println(cheapest);
+
 
 
     }
