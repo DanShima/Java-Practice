@@ -1,9 +1,8 @@
 package com.danshima.DressMaking;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
@@ -39,6 +38,15 @@ public class FilterDress {
                 .map(Dress::getBrand) //extract the names of dresses
                 .collect(toList()); //store all those names in a list
         System.out.println(newList);
+
+        //convert a stream to a numeric stream
+        IntStream intStream = wardrobe.stream().mapToInt(Dress::getPrice);
+        //convert the numeric stream to a stream
+        Stream<Integer> stream = intStream.boxed();
+
+
+        OptionalInt maxPrice = wardrobe.stream().mapToInt(Dress::getPrice).max();
+        System.out.println("The most expensive dress costs " + maxPrice);
 
 
     }
