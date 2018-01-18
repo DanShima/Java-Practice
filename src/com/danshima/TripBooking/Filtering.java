@@ -1,12 +1,10 @@
 package com.danshima.TripBooking;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -78,6 +76,17 @@ public class Filtering {
                 trips.stream()
                 .min(comparing(Trip::getPrice));
         System.out.println(cheapest);
+
+        //Group a list of trips by their travellers
+        Map<Traveller, List<Trip>> tripsByTraveller =
+                trips.stream().collect(groupingBy(Trip::getTraveller));
+        System.out.println(tripsByTraveller);
+
+        long howManyTrips = trips.stream().count();
+        System.out.println("the number of trips is " + howManyTrips);
+
+        String allCitiesInString = trips.stream().map(Trip::getCity).collect(joining());
+        System.out.println(allCitiesInString);
 
 
 
