@@ -2,11 +2,10 @@ package com.danshima.TripBooking;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static java.util.Comparator.comparing;
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.*;
 
 public class Filtering {
     public static void main(String... args) {
@@ -85,10 +84,44 @@ public class Filtering {
         long howManyTrips = trips.stream().count();
         System.out.println("the number of trips is " + howManyTrips);
 
-        String allCitiesInString = trips.stream().map(Trip::getCity).collect(joining());
+        String allCitiesInString = trips.stream().map(Trip::getCity).collect(joining(", "));
         System.out.println(allCitiesInString);
 
 
 
     }
+
+    public boolean isPrime(int number){
+        return IntStream.range(2, number) //generate numbers t/m 2 but excluding number
+                .noneMatch(i -> number % i == 0);
+    }
+
+    /**
+     * check for prime numbers
+     * test only for factors less than or equal to the square root of the candidate
+     *  @param number
+     * @return true if the candidate isnt divisible for any of the numbers in the stream
+     */
+
+    public boolean isPrimeOptimal(int number){
+        int numberSquareRoot = (int) Math.sqrt((double) number);
+        return IntStream.rangeClosed(2, numberSquareRoot)
+                        .noneMatch(i -> number % i == 0);
+    }
+
+    /**
+     * partitioning the first n numbers into prime and non-primes
+     * @param n
+     * @return
+     */
+
+    public Map<Boolean, List<Integer>> partitionPrimes(int n){
+        return IntStream.rangeClosed(2, n).boxed()
+                .collect(partitioningBy(number -> isPrime(number)));
+    }
+
+
+
+
+
 }
