@@ -98,7 +98,8 @@ public class Filtering {
 
     /**
      * check for prime numbers
-     * test only for factors less than or equal to the square root of the candidate
+     * limit the number of divisors to be tested against
+     * the candidate prime to those not bigger than the square root of the candidate
      *  @param number
      * @return true if the candidate isnt divisible for any of the numbers in the stream
      */

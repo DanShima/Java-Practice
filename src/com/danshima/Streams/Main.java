@@ -1,5 +1,6 @@
 package com.danshima.Streams;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.IntSupplier;
@@ -12,6 +13,15 @@ public class Main {
 
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 1, 3, 3, 4, 5);
+
+        //collect in a list all the items in a stream of a given list (numbers in this case)
+        List<Integer> collectedNum = numbers.stream().collect(
+                ArrayList::new,
+                List::add,
+                List::addAll);
+        System.out.println(collectedNum);
+
+
         numbers.stream()
                 .filter(i -> i % 2 == 0)
                 .distinct() //only unique elements/no duplicates
